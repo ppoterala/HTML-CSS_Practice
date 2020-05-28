@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  perspective: 10em;
+  overflow: hidden;
+}
+
+div {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: sans-serif;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+
+  transition: all 25s linear;
+  transform: rotateX(30deg) translateY(400px);
+}
+
+div:hover {
+  transform: rotateX(30deg) translateY(-1200px);
+}
