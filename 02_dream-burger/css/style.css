@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%) fixed;
+}
+
+.boy img {
+    width: 300px;
+    height: 300px;
+}
+
+.burger img {
+    width: 100px;
+    height: 100px;
+}
+
+.boy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.space-for-fly {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 600px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.burger {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: 0 300px;
+    animation: fly 15s linear infinite;
+}
+
+@keyframes fly {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
