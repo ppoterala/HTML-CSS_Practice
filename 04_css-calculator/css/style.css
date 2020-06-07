@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Open Sans;
+    font-size: 24px;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.calc {
+    box-shadow: 0px 2.76726px 2.21381px rgba(0, 0, 0, 0.0196802), 0px 6.6501px 5.32008px rgba(0, 0, 0, 0.0282725), 0px 12.5216px 10.0172px rgba(0, 0, 0, 0.035), 0px 22.3363px 17.869px rgba(0, 0, 0, 0.0417275), 0px 41.7776px 33.4221px rgba(0, 0, 0, 0.0503198), 0px 100px 80px rgba(0, 0, 0, 0.07);
+    border-radius: 15px;
+}
+
+.panel {
+    padding: 30px 28px;
+    border-radius: 0 0 15px 15px;
+    /*   bg */
+    background-color: #181818;
+
+    color: white;
+    width: 360px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 5px;
+}
+
+div.panel div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+
+    width: 72px;
+    height: 72px;
+    border-radius: 5px;
+
+    background-color: #242424;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.6);
+
+    cursor: pointer;
+}
+
+div.panel div.panel_function-btn {
+    background-color: #181818;
+}
+
+div.panel div.panel_function-results {
+    background-color: #CA0909;
+}
+
+
+.result {
+    border-radius: 15px 15px 0 0;
+    padding-top: 55px;
+    padding-left: 55px;
+    padding-right: 55px;
+
+    text-align: right;
+
+    width: 360px;
+    height: 226px;
+    /*   bg */
+    background-color: #181818;
+    color: white;
+}
+
+.result_final {
+    margin-top: 45px;
+    font-size: 48px;
+}
+
+div.result div.result_icon-history {
+    cursor: pointer;
+}
